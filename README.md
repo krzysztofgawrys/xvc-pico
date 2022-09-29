@@ -29,7 +29,7 @@ Note: This project was tested with Vivado 2021.1, Raspberry Pico as the JTAG
 programmer (XVC server), and EBAZ4205 'Development' FPGA Board in August 2021.
 
 
-### Building pico-xvc
+### Building pico-xvc (for Linux users)
 
 Shortcut: Upload the pre-built `dirtyJtag.uf2` file to the Raspberry Pico
 Board. Done - skip to the next section.
@@ -68,6 +68,19 @@ export CFLAGS="-Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wno-unu
 cmake .
 make -j4
 ```
+
+### Windows Notes
+
+Download `xvcd-pico.exe` from https://github.com/kholia/xvc-pico/actions page.
+
+You need to install the `libusbK` driver with `Zadig` (https://zadig.akeo.ie/).
+
+OR
+
+You can install the WinLibUSB driver from `USB Drive Tool Application`
+(https://visualgdb.com/UsbDriverTool/).
+
+Credit does to https://github.com/benitoss/ for these instructions.
 
 
 ### Usage
